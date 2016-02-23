@@ -1,5 +1,5 @@
 
-external_repos := silk opus zrtp4pj openssl libvpx fdk_aac
+external_repos := silk opus openssl libvpx fdk_aac
 external_sources := $(foreach repos, $(external_repos),jni/$(repos)/sources)
 
 to_patch := pjsip webrtc ffmpeg libvpx silk fdk_aac
