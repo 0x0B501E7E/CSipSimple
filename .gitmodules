@@ -1,3 +1,6 @@
 [submodule "CSipSimple/jni/zrtp4pj/sources"]
 	path = CSipSimple/jni/zrtp4pj/sources
 	url = git@github.com:0x0B501E7E/ZRTP4PJ.git
+[submodule "CSipSimple/jni/fdk_aac/sources"]
+	path = CSipSimple/jni/fdk_aac/sources
+	url = git@github.com:0x0B501E7E/aac.git
