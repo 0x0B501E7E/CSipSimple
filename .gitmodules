@@ -16,3 +16,6 @@
 [submodule "CSipSimple/jni/opus/sources"]
 	path = CSipSimple/jni/opus/sources
 	url = git@github.com:0x0B501E7E/opus.git
+[submodule "CSipSimple/jni/libvpx/sources"]
+	path = CSipSimple/jni/libvpx/sources
+	url = git@github.com:0x0B501E7E/webm.libvpx.git

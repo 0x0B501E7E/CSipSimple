@@ -1,5 +1,5 @@
 
-external_repos := silk libvpx
+external_repos := silk
 external_sources := $(foreach repos, $(external_repos),jni/$(repos)/sources)
 
 to_patch := pjsip webrtc ffmpeg libvpx silk fdk_aac

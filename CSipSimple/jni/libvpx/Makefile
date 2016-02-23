@@ -1,7 +1,6 @@
 BUILD_DIRECTORY := build
 
 patches_files := $(wildcard patches/*.diff)
-libvpx_tag := v1.1.0
 NDK_ROOT := $(shell dirname $(shell which ndk-build))
 
 # Get targets from Application.mk config file
@@ -34,21 +33,6 @@ $(BUILD_DIRECTORY)/%/config.mk : sources .patched_sources
 	if [ "$(BUILD_DIRECTORY)/mips/config.mk" = "$@" ]; then TGT=mips32-android-gcc; fi; \
 	BUILD_PFX=jni/libvpx/$(subst config.mk,,$@) ../../sources/configure --target=$$TGT --disable-examples --sdk-path=$(NDK_ROOT)
 
-sources :
-	@ git clone https://code.google.com/p/webm.libvpx sources; \
-	cd sources; \
-	git fetch --tags; \
-	git checkout origin; \
-	git checkout $(libvpx_tag);
-
-
-update : sources
-	@cd sources; \
-	git fetch --tags; \
-	git checkout origin; \
-	git checkout $(libvpx_tag);
-	
-	
 patch : .patched_sources
 	@# Patch done
 
