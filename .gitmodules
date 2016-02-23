@@ -1,0 +1,3 @@
+[submodule "CSipSimple/jni/zrtp4pj/sources"]
+	path = CSipSimple/jni/zrtp4pj/sources
+	url = git@github.com:0x0B501E7E/ZRTP4PJ.git
