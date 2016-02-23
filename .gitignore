@@ -1,0 +1,127 @@
+
+# /ActionBarSherlock/
+/ActionBarSherlock/gen
+/ActionBarSherlock/bin
+/ActionBarSherlock/.classpath
+/ActionBarSherlock/.pmd
+/ActionBarSherlock/.project
+/ActionBarSherlock/.settings
+/ActionBarSherlock/local.properties
+/ActionBarSherlock/ant.properties
+/ActionBarSherlock/proguard-project.txt
+
+# /CSipSimple/
+/CSipSimple/.classpath
+/CSipSimple/.project
+/CSipSimple/PSJUA API.url
+/CSipSimple/Saved Sources
+/CSipSimple/Saved from Phone
+/CSipSimple/bin
+/CSipSimple/gen
+/CSipSimple/libpjsipjni
+/CSipSimple/libs
+/CSipSimple/local.properties
+/CSipSimple/obj
+/CSipSimple/xxx.map
+/CSipSimple/.settings
+/CSipSimple/.cproject
+/CSipSimple/reports
+/CSipSimple/javadoc.xml
+/CSipSimple/.pydevproject
+/CSipSimple/build
+/CSipSimple/.idea
+/CSipSimple/.metadata
+/CSipSimple/CSipSimple.iml
+
+# /CSipSimple/.externalToolBuilders/
+/CSipSimple/.externalToolBuilders/org.eclipse.cdt.managedbuilder.core.genmakebuilder.launch
+/CSipSimple/.externalToolBuilders/org.python.pydev.PyDevBuilder.launch
+
+# /CSipSimple/art/
+/CSipSimple/art/original-hdpi
+/CSipSimple/art/original-mdpi
+/CSipSimple/art/original-xhdpi
+/CSipSimple/art/original
+
+# /CSipSimple/jni/
+/CSipSimple/jni/openssl-fake
+/CSipSimple/jni/Local.mk
+/CSipSimple/jni/pj_omx
+
+# /CSipSimple/jni/codec2/
+
+# /CSipSimple/jni/fdk_aac/
+/CSipSimple/jni/fdk_aac/.pc
+/CSipSimple/jni/fdk_aac/.patched_sources
+
+# /CSipSimple/jni/ffmpeg/
+/CSipSimple/jni/ffmpeg/sources
+/CSipSimple/jni/ffmpeg/sources_ffmpeg
+/CSipSimple/jni/ffmpeg/build
+/CSipSimple/jni/ffmpeg/.pc
+/CSipSimple/jni/ffmpeg/.patched_sources
+
+# /CSipSimple/jni/libvpx/
+/CSipSimple/jni/libvpx/build
+/CSipSimple/jni/libvpx/.pc
+/CSipSimple/jni/libvpx/.patched_sources
+
+# /CSipSimple/jni/openssl/
+
+# /CSipSimple/jni/opus/
+/CSipSimple/jni/opus/.pc
+
+# /CSipSimple/jni/pjsip/
+/CSipSimple/jni/pjsip/.pc
+/CSipSimple/jni/pjsip/.patched_sources
+
+# /CSipSimple/jni/silk/
+/CSipSimple/jni/silk/SILK_SDK_SRC_v1.0.8.zip
+/CSipSimple/jni/silk/sources
+/CSipSimple/jni/silk/.pc
+/CSipSimple/jni/silk/.patched_sources
+
+# /CSipSimple/jni/swig-glue/
+/CSipSimple/jni/swig-glue/nativesrc
+/CSipSimple/jni/swig-glue/pjsua.i
+
+# /CSipSimple/jni/third_party/
+
+# /CSipSimple/jni/webrtc/
+/CSipSimple/jni/webrtc/.pc
+/CSipSimple/jni/webrtc/.patched_sources
+
+# /CSipSimple/jni/zrtp4pj/
+
+# /CSipSimple/res/
+/CSipSimple/res/drawable-mcc100
+
+# /CSipSimple/res/drawable/
+/CSipSimple/res/drawable/ic_ippi_plugin.png
+/CSipSimple/res/drawable/ic_mytunu_plugin.png
+
+# /CSipSimple/src/org/pjsip/
+/CSipSimple/src/org/pjsip/pjsua
+
+# /CSipSimpleCodecG729/
+/CSipSimpleCodecG729/gen
+/CSipSimpleCodecG729/bin
+/CSipSimpleCodecG729/.classpath
+/CSipSimpleCodecG729/libs
+
+# /CSipSimpleCodecPack/
+/CSipSimpleCodecPack/gen
+/CSipSimpleCodecPack/libs
+/CSipSimpleCodecPack/bin
+/CSipSimpleCodecPack/.classpath
+/CSipSimpleCodecPack/.project
+/CSipSimpleCodecPack/.settings
+/CSipSimpleCodecPack/.cproject
+
+# /CSipSimpleVideoPlugin/
+/CSipSimpleVideoPlugin/gen
+/CSipSimpleVideoPlugin/bin
+/CSipSimpleVideoPlugin/.classpath
+/CSipSimpleVideoPlugin/.project
+/CSipSimpleVideoPlugin/libs
+
