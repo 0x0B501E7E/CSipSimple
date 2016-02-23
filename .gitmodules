@@ -22,3 +22,6 @@
 [submodule "CSipSimple/jni/codec2/sources"]
 	path = CSipSimple/jni/codec2/sources
 	url = git@github.com:0x0B501E7E/codec2.git
+[submodule "CSipSimple/jni/pjsip/sources"]
+	path = CSipSimple/jni/pjsip/sources
+	url = git@github.com:0x0B501E7E/pjproject.git
