@@ -25,3 +25,6 @@
 [submodule "CSipSimple/jni/pjsip/sources"]
 	path = CSipSimple/jni/pjsip/sources
 	url = git@github.com:0x0B501E7E/pjproject.git
+[submodule "CSipSimple/jni/third_party/libyuv"]
+	path = CSipSimple/jni/third_party/libyuv
+	url = git@github.com:0x0B501E7E/libyuv.git
