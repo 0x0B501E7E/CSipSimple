@@ -5,7 +5,6 @@ FFMPEG_TEST_LIB := lib/libavcodec.a
 X264_TEST_LIB := lib/libx264.a
 patches_files := $(wildcard patches/*.diff)
 
-ffmpeg_version := n0.11.2
 x264_version := stable
 
 # Get targets from Application.mk config file
@@ -34,11 +33,6 @@ $(FFMPEG_BUILD_DIRECTORY)/%/$(FFMPEG_TEST_LIB) : ffmpeg_src/VERSION $(X264_BUILD
 	./build_ffmpeg.sh $(subst /$(FFMPEG_TEST_LIB),,$(subst $(FFMPEG_BUILD_DIRECTORY)/,,$@))
 
 # Source checkout
-ffmpeg_src/VERSION :
-	@git clone git://git.videolan.org/ffmpeg.git ffmpeg_src; \
-	cd ffmpeg_src; \
-	$(call git_update, $(ffmpeg_version))
-
 x264_src/configure :
 	@git clone git://git.videolan.org/x264.git x264_src; \
 	cd x264_src; \
@@ -59,11 +53,7 @@ clean :
 	@if [ -f x264_src/config.mak ]; then $(MAKE) -C x264_src clean; fi;
 	@if [ -d build ]; then rm -rf build; fi;
 	
-update : ffmpeg_src/VERSION
-	# FFmpeg
-	@cd ffmpeg_src; \
-	$(call git_update, $(ffmpeg_version))
-	# X264
+update : # X264
 	@cd x264_src; \
 	$(call git_update, $(x264_version))
 

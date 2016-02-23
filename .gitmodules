@@ -7,3 +7,6 @@
 [submodule "CSipSimple/jni/openssl/sources"]
 	path = CSipSimple/jni/openssl/sources
 	url = git@github.com:0x0B501E7E/platform_external_openssl.git
+[submodule "CSipSimple/jni/ffmpeg/ffmpeg_src"]
+	path = CSipSimple/jni/ffmpeg/ffmpeg_src
+	url = git@github.com:0x0B501E7E/ffmpeg.git
