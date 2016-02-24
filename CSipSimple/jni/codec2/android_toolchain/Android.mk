@@ -7,7 +7,7 @@ ifeq ($(MY_USE_CODEC2),1)
 include $(CLEAR_VARS)
 LOCAL_MODULE := pj_codec2_codec
 
-CODEC2_PATH := ../sources
+CODEC2_PATH := ../sources/src
 PJ_CODEC2_PATH := ../pj_sources
 CODEC2_GEN_PATH := ../generated
 

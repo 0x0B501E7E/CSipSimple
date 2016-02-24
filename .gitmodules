@@ -19,3 +19,6 @@
 [submodule "CSipSimple/jni/libvpx/sources"]
 	path = CSipSimple/jni/libvpx/sources
 	url = git@github.com:0x0B501E7E/webm.libvpx.git
+[submodule "CSipSimple/jni/codec2/sources"]
+	path = CSipSimple/jni/codec2/sources
+	url = git@github.com:0x0B501E7E/codec2.git
