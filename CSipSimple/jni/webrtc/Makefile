@@ -13,6 +13,7 @@ MY_ARM_CFLAGS_NEON := \
 AECM_NEON_DIR := sources/src/modules/audio_processing/aecm
 AECM_NEON_GEN := $(AECM_NEON_DIR)/aecm_core_neon_offsets.h
 AECM_NEON_INTERMEDIATE := $(AECM_NEON_GEN:%.h=%.S)
+AECM_NEON_DEPENDENCY := $(AECM_NEON_GEN:%.h=%.d)
 AECM_NEON_SRC := $(AECM_NEON_GEN:%.h=%.c)
 AECM_NEON_INCLUDES := $(AECM_NEON_DIR)/include \
     $(AECM_NEON_DIR)/../utility \
@@ -23,6 +24,7 @@ AECM_NEON_INCLUDES := $(AECM_NEON_DIR)/include \
 NS_NEON_DIR := sources/src/modules/audio_processing/ns
 NS_NEON_GEN := $(NS_NEON_DIR)/nsx_core_neon_offsets.h
 NS_NEON_INTERMEDIATE := $(NS_NEON_GEN:%.h=%.S)
+NS_NEON_DEPENDENCY := $(NS_NEON_GEN:%.h=%.d)
 NS_NEON_SRC := $(NS_NEON_GEN:%.h=%.c)
 NS_NEON_INCLUDES := $(NS_NEON_DIR)/include \
     $(NS_NEON_DIR)/../utility \
@@ -65,3 +67,5 @@ clean :
 	@rm -f $(AECM_NEON_INTERMEDIATE)
 	@rm -f $(NS_NEON_GEN)
 	@rm -f $(AECM_NEON_GEN)
+	@rm -f $(NS_NEON_DEPENDENCY)
+	@rm -f $(AECM_NEON_DEPENDENCY)
