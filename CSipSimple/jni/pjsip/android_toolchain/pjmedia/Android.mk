@@ -12,7 +12,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../pjlib/include $(LOCAL_PATH)/../pjlib-util/i
 	$(LOCAL_PATH)/../third_party/srtp/include $(LOCAL_PATH)../third_party/srtp/include \
 	$(LOCAL_PATH)/../third_party/srtp/crypto/include $(LOCAL_PATH)/../third_party/build/srtp \
 	$(LOCAL_PATH)/../third_party/build/speex $(LOCAL_PATH)/../third_party/speex/include \
-	$(LOCAL_PATH)/../third_party
+	$(LOCAL_PATH)/../third_party $(LOCAL_PATH)/../../../openssl/sources/include
 
 
 LOCAL_CFLAGS := $(MY_PJSIP_FLAGS)
