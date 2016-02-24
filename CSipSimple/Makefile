@@ -42,6 +42,9 @@ clean :
 	@($(MAKE) -C jni/ffmpeg clean)
 	@($(MAKE) -C jni/webrtc clean)
 
+distclean : clean
+	@$(foreach dir,$(to_patch),$(MAKE) $(MFLAGS) -C jni/$(dir) unpatch;)
+
 CodecPackLibs :
 	@(ndk-build -j6 APP_MODULES="pj_g7221_codec pj_codec2_codec pj_g726_codec pj_opus_codec pj_aac_codec")
 	@(./dispatch_shared_libs.sh)
