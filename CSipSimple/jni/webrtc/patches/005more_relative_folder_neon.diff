@@ -1,7 +1,7 @@
-Index: webrtc/sources/modules/audio_processing/aecm/Android.mk
+Index: webrtc/sources/src/modules/audio_processing/aecm/Android.mk
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/aecm/Android.mk	2012-06-25 11:17:13.000000000 +0200
-+++ webrtc/sources/modules/audio_processing/aecm/Android.mk	2012-08-31 14:58:15.029615982 +0200
+--- webrtc.orig/sources/src/modules/audio_processing/aecm/Android.mk	2012-06-25 11:17:13.000000000 +0200
++++ webrtc/sources/src/modules/audio_processing/aecm/Android.mk	2012-08-31 14:58:15.029615982 +0200
 @@ -60,7 +60,7 @@
  
  # Generate a header file aecm_core_neon_offsets.h which will be included in
@@ -11,10 +11,10 @@ Index: webrtc/sources/modules/audio_processing/aecm/Android.mk
              $(intermediates)/aecm_core_neon_offsets.S
  	@python $^ $@ offset_aecm_
  
-Index: webrtc/sources/modules/audio_processing/ns/Android.mk
+Index: webrtc/sources/src/modules/audio_processing/ns/Android.mk
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/ns/Android.mk	2012-06-25 11:17:13.000000000 +0200
-+++ webrtc/sources/modules/audio_processing/ns/Android.mk	2012-09-01 11:34:52.590131855 +0200
+--- webrtc.orig/sources/src/modules/audio_processing/ns/Android.mk	2012-06-25 11:17:13.000000000 +0200
++++ webrtc/sources/src/modules/audio_processing/ns/Android.mk	2012-09-01 11:34:52.590131855 +0200
 @@ -61,7 +61,7 @@
  
  # Generate a header file nsx_core_neon_offsets.h which will be included in

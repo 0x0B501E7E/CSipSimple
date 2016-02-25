@@ -70,7 +70,7 @@ ifeq ($(MY_USE_GSM),1)
 endif
 
 ifeq ($(MY_USE_WEBRTC),1)
-	LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../../webrtc/sources
+	LOCAL_C_INCLUDES += $(LOCAL_PATH)/../../../webrtc/sources/src
 	
 	#AEC
 	LOCAL_SRC_FILES += $(PJLIB_SRC_DIR)/echo_webrtc_aec.c 

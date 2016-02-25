@@ -28,3 +28,6 @@
 [submodule "CSipSimple/jni/third_party/libyuv"]
 	path = CSipSimple/jni/third_party/libyuv
 	url = git@github.com:0x0B501E7E/libyuv.git
+[submodule "CSipSimple/jni/webrtc/sources"]
+	path = CSipSimple/jni/webrtc/sources
+	url = git@github.com:0x0B501E7E/webrtc.git

@@ -1,7 +1,7 @@
-Index: webrtc/sources/modules/audio_processing/aecm/Android.mk
+Index: webrtc/sources/src/modules/audio_processing/aecm/Android.mk
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/aecm/Android.mk	(revision 3040)
-+++ webrtc/sources/modules/audio_processing/aecm/Android.mk	(working copy)
+--- webrtc.orig/sources/src/modules/audio_processing/aecm/Android.mk	(revision 3040)
++++ webrtc/sources/src/modules/audio_processing/aecm/Android.mk	(working copy)
 @@ -56,20 +56,18 @@
  LOCAL_MODULE := libwebrtc_aecm_neon
  LOCAL_MODULE_TAGS := optional
@@ -38,9 +38,9 @@ Index: webrtc/sources/modules/audio_processing/aecm/Android.mk
      $(LOCAL_PATH)/include \
      $(LOCAL_PATH)/../../.. \
      $(LOCAL_PATH)/../../../common_audio/signal_processing/include
-Index: webrtc/sources/modules/audio_processing/aecm/aecm_core.h
+Index: webrtc/sources/src/modules/audio_processing/aecm/aecm_core.h
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/aecm/aecm_core.h	(revision 3040)
+--- webrtc.orig/sources/src/modules/audio_processing/aecm/aecm_core.h	(revision 3040)
 +++ webrtc/modules/audio_processing/aecm/aecm_core.h	(working copy)
 @@ -13,11 +13,10 @@
  #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_AECM_AECM_CORE_H_
@@ -56,10 +56,10 @@ Index: webrtc/sources/modules/audio_processing/aecm/aecm_core.h
  #ifdef _MSC_VER // visual c++
  #define ALIGN8_BEG __declspec(align(8))
  #define ALIGN8_END
-Index: webrtc/sources/modules/audio_processing/aecm/aecm_core_neon.S
+Index: webrtc/sources/src/modules/audio_processing/aecm/aecm_core_neon.S
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/aecm/aecm_core_neon.S	(revision 3040)
-+++ webrtc/sources/modules/audio_processing/aecm/aecm_core_neon.S	(working copy)
+--- webrtc.orig/sources/src/modules/audio_processing/aecm/aecm_core_neon.S	(revision 3040)
++++ webrtc/sources/src/modules/audio_processing/aecm/aecm_core_neon.S	(working copy)
 @@ -26,66 +26,64 @@
  .global WebRtcAecm_StoreAdaptiveChannelNeon
  .global WebRtcAecm_ResetAdaptiveChannelNeon
@@ -237,20 +237,20 @@ Index: webrtc/sources/modules/audio_processing/aecm/aecm_core_neon.S
    cmp r2, #0                                  @ Check if (nearendClean != NULL).
    beq END
  
-Index: webrtc/sources/modules/audio_processing/aecm/aecm_core_neon_offsets.c
+Index: webrtc/sources/src/modules/audio_processing/aecm/aecm_core_neon_offsets.c
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/aecm/aecm_core_neon_offsets.c	(revision 3040)
-+++ webrtc/sources/modules/audio_processing/aecm/aecm_core_neon_offsets.c	(working copy)
+--- webrtc.orig/sources/src/modules/audio_processing/aecm/aecm_core_neon_offsets.c	(revision 3040)
++++ webrtc/sources/src/modules/audio_processing/aecm/aecm_core_neon_offsets.c	(working copy)
 @@ -23,4 +23,4 @@
  int offset_aecm_channelStored = offsetof(AecmCore_t, channelStored);
  int offset_aecm_channelAdapt16 = offsetof(AecmCore_t, channelAdapt16);
  int offset_aecm_channelAdapt32 = offsetof(AecmCore_t, channelAdapt32);
 -
 +int offset_aecm_real_fft = offsetof(AecmCore_t, real_fft);
-Index: webrtc/sources/modules/audio_processing/audio_processing.gypi
+Index: webrtc/sources/src/modules/audio_processing/audio_processing.gypi
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/audio_processing.gypi	(revision 3040)
-+++ webrtc/sources/modules/audio_processing/audio_processing.gypi	(working copy)
+--- webrtc.orig/sources/src/modules/audio_processing/audio_processing.gypi	(revision 3040)
++++ webrtc/sources/src/modules/audio_processing/audio_processing.gypi	(working copy)
 @@ -159,19 +159,50 @@
        ],
      }],
@@ -315,10 +315,10 @@ Index: webrtc/sources/modules/audio_processing/audio_processing.gypi
        ],
      }],
    ],
-Index: webrtc/sources/modules/audio_processing/ns/Android.mk
+Index: webrtc/sources/src/modules/audio_processing/ns/Android.mk
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/ns/Android.mk	(revision 3040)
-+++ webrtc/sources/modules/audio_processing/ns/Android.mk	(working copy)
+--- webrtc.orig/sources/src/modules/audio_processing/ns/Android.mk	(revision 3040)
++++ webrtc/sources/src/modules/audio_processing/ns/Android.mk	(working copy)
 @@ -57,19 +57,18 @@
  LOCAL_MODULE_CLASS := STATIC_LIBRARIES
  LOCAL_MODULE := libwebrtc_ns_neon
@@ -355,10 +355,10 @@ Index: webrtc/sources/modules/audio_processing/ns/Android.mk
      $(LOCAL_PATH)/include \
      $(LOCAL_PATH)/../../.. \
      $(LOCAL_PATH)/../../../common_audio/signal_processing/include
-Index: webrtc/sources/modules/audio_processing/ns/nsx_core.h
+Index: webrtc/sources/src/modules/audio_processing/ns/nsx_core.h
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/ns/nsx_core.h	(revision 3040)
-+++ webrtc/sources/modules/audio_processing/ns/nsx_core.h	(working copy)
+--- webrtc.orig/sources/src/modules/audio_processing/ns/nsx_core.h	(revision 3040)
++++ webrtc/sources/src/modules/audio_processing/ns/nsx_core.h	(working copy)
 @@ -11,11 +11,10 @@
  #ifndef WEBRTC_MODULES_AUDIO_PROCESSING_NS_MAIN_SOURCE_NSX_CORE_H_
  #define WEBRTC_MODULES_AUDIO_PROCESSING_NS_MAIN_SOURCE_NSX_CORE_H_
@@ -373,10 +373,10 @@ Index: webrtc/sources/modules/audio_processing/ns/nsx_core.h
  #ifdef NS_FILEDEBUG
  #include <stdio.h>
  #endif
-Index: webrtc/sources/modules/audio_processing/ns/nsx_core_neon.S
+Index: webrtc/sources/src/modules/audio_processing/ns/nsx_core_neon.S
 ===================================================================
---- webrtc.orig/sources/modules/audio_processing/ns/nsx_core_neon.S	(revision 3040)
-+++ webrtc/sources/modules/audio_processing/ns/nsx_core_neon.S	(working copy)
+--- webrtc.orig/sources/src/modules/audio_processing/ns/nsx_core_neon.S	(revision 3040)
++++ webrtc/sources/src/modules/audio_processing/ns/nsx_core_neon.S	(working copy)
 @@ -335,7 +335,7 @@
  
    mov r0, r4

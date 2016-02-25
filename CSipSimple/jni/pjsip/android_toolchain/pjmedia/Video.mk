@@ -13,12 +13,12 @@ PJMEDIADEV_SRC_DIR := src/pjmedia-audiodev
 PJMEDIADEV_VIDEO_SRC_DIR := src/pjmedia-videodev
 PJMEDIACODEC_SRC_DIR := src/pjmedia-codec
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../webrtc/sources/modules/video_render/main/interface \
-	$(LOCAL_PATH)/../../../webrtc/sources/modules/video_capture/main/interface \
-	$(LOCAL_PATH)/../../../webrtc/sources/modules/interface \
-	$(LOCAL_PATH)/../../../webrtc/sources/system_wrappers/interface \
-	$(LOCAL_PATH)/../../../webrtc/sources/modules \
-	$(LOCAL_PATH)/../../../webrtc/sources \
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../webrtc/sources/src/modules/video_render/main/interface \
+	$(LOCAL_PATH)/../../../webrtc/sources/src/modules/video_capture/main/interface \
+	$(LOCAL_PATH)/../../../webrtc/sources/src/modules/interface \
+	$(LOCAL_PATH)/../../../webrtc/sources/src/system_wrappers/interface \
+	$(LOCAL_PATH)/../../../webrtc/sources/src/modules \
+	$(LOCAL_PATH)/../../../webrtc/sources/src \
 	$(LOCAL_PATH)/../pjlib/include $(LOCAL_PATH)/../pjlib-util/include \
 	$(LOCAL_PATH)/../pjsip/include \
 	$(LOCAL_PATH)/../pjnath/include $(LOCAL_PATH)/include $(LOCAL_PATH)/.. 

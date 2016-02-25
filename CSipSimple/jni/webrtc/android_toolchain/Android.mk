@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
-WEBRTC_PATH := $(LOCAL_PATH)/../sources
+WEBRTC_PATH := $(LOCAL_PATH)/../sources/src
 
 ifeq ($(MY_USE_WEBRTC),1)
 
